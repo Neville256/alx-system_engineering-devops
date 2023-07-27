@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Displays numbers from 1 to 20 and the following
+# the string "bad luck from china" in the 4th loop
+# the string "bad luck from japan" in the 9th loop
+# the string "bad luck from italy" in the 17th loop
+
+k=1
+
+while [ $k -le 20]; do
+	echo "$k"
+	case "$k" in
+	4)
+		echo "bad luck from china" ;;
+	9)
+		echo "bad luck from Japan" ;;
+	17)
+		echo "bad luck from Italy" ;;
+	esac
+	k=$((k+1))
+done
