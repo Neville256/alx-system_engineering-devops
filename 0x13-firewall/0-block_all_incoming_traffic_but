@@ -1,3 +1,8 @@
+# Set the default policies
+ufw default deny incoming
+ufw default allow outgoing
+
+# Allow the below ports
 ufw allow 80/tcp
 ufw allow 443/tcp
 ufw allow 22/tcp
